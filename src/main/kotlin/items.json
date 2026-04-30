@@ -1,24 +1,22 @@
-{
-  "item": [
+[
     {
       "id": "iron_ore",
       "name":"Железная руда",
-      "isRaw": "true"
+      "isRaw": true
     },
     {
       "id": "coal",
       "name": "Уголь",
-      "isRaw":"true"
+      "isRaw":true
     },
     {
       "id": "iron_ingot",
       "name": "Железный слиток",
-      "isRaw":"false"
+      "isRaw":false
     },
     {
       "id": "iron_plate",
       "name": "Железная пластина",
-      "isRaw":"false"
+      "isRaw":false
     }
-  ]
-}
+]
