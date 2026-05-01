@@ -1,3 +1,5 @@
+
+
 class ProductionNode(
     val id: ItemId, //Что производим
     val count: Float, //Количество предметов в минуту
@@ -37,4 +39,29 @@ class ProductionCalculator(
         )
 
     }
+}
+fun totalPower(
+    node: ProductionNode,
+    recipeService: RecipesService,
+): Float {
+
+    val childrenPower = node.children.fold(0f) { acc, child ->
+        acc + totalPower(child, recipeService)
+    }
+
+    val recipe = node.recipe ?: return childrenPower
+
+    val outputAmount = recipe.output.amount
+    val scale = node.count / outputAmount
+
+    val remainder = scale % 1 //Остаток для формулы потребления
+    val number = scale - remainder // Тупо без формулы
+    println("${recipeService.getMachine(recipe)} предмет - ${recipe.id} кол-во - ${node.count} - проценты ${remainder*100}")
+    val powerPerMachine =recipeService.getMachinePower(recipe,100f)
+    val powerMachine = recipeService.getMachinePower(recipe,remainder*100)
+
+    val currentPower = number * powerPerMachine + powerMachine
+
+    return currentPower + childrenPower
+
 }

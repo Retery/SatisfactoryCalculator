@@ -8,8 +8,8 @@ fun printTree(
 ) {
     val connector = if (isLast) "└──" else "├──"
     val itemName = recipeService.getItem(node.id).name
-
-    println("$prefix$connector $itemName x${node.count}")
+    //val machine = if ()
+    println("$prefix$connector $itemName($) x${node.count}")
     val newPrefix = if (isLast)"$prefix   " else "$prefix|   "
 
     node.children.forEachIndexed { index, child ->

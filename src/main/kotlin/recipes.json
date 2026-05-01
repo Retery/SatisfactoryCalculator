@@ -31,7 +31,7 @@
     ],
     "output": {
       "itemId": "iron_rod",
-      "amount": 30
+      "amount": 15
     },
     "machine": "constructor"
   },
@@ -51,10 +51,10 @@
     "id": "rotor_assembler",
     "input": [
       { "itemId":  "iron_rod",
-        "amount": 5},
+        "amount": 20},
       {
         "itemId": "screws",
-        "amount": 25
+        "amount": 100
       }
     ],
     "output": {

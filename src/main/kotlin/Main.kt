@@ -9,6 +9,8 @@ fun main() {
     val recipeService = RecipesService(items,recipes)
 
     val calculator = ProductionCalculator(recipeService)
-    val tree = calculator.buildTree("rotor",4f)
+    val tree = calculator.buildTree("iron_plate",1300f)
     printTree(tree,recipeService)
+    val total = totalPower(tree,recipeService)
+    println("Total power: $total MW")
 }
