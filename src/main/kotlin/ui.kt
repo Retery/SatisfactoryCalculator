@@ -1,11 +1,27 @@
 import kotlin.collections.forEach
-fun printTree(node: ProductionNode, prefix: String = "",isLast: Boolean = true) {
 
+fun printTree(
+    node: ProductionNode,
+    recipeService: RecipesService,
+    prefix: String = "",
+    isLast: Boolean = true
+) {
+    val connector = if (isLast) "└──" else "├──"
+    val itemName = recipeService.getItem(node.id).name
+
+    println("$prefix$connector $itemName x${node.count}")
+    val newPrefix = if (isLast)"$prefix   " else "$prefix|   "
+
+    node.children.forEachIndexed { index, child ->
+        val isLastChild = (index == node.children.lastIndex)
+        printTree(child, recipeService, newPrefix, isLastChild)
+    }
 }
+
 fun showCountDownloads(
     items: List<Item>,
     recipes: List<Recipe>
-){
+) {
     println("Загружено предметов: ${items.size}")
 
     items.forEach { item ->

@@ -46,5 +46,21 @@
       "amount": 40
     },
     "machine": "constructor"
+  },
+  {
+    "id": "rotor_assembler",
+    "input": [
+      { "itemId":  "iron_rod",
+        "amount": 5},
+      {
+        "itemId": "screws",
+        "amount": 25
+      }
+    ],
+    "output": {
+      "itemId": "rotor",
+      "amount": 4
+    },
+    "machine": "assembler"
   }
 ]

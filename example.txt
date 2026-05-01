@@ -1,0 +1,15 @@
+{
+  "id": "concrete",
+  "name": "Бетон",
+  "isRaw": false
+},
+{
+  "id": "quartz_crystal",
+  "name": "Кварцевый кристалл",
+  "isRaw": false
+},
+{
+  "id": "silica",
+  "name": "Кремнезем",
+  "isRaw": false
+},

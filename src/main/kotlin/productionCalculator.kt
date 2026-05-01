@@ -29,7 +29,6 @@ class ProductionCalculator(
             val childAmount = input.amount * scale
             buildTree(input.itemId, childAmount)
         }
-        println("\n\n $recipe")
         return ProductionNode(
             id = itemId,
             count = amount,

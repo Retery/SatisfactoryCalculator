@@ -27,6 +27,96 @@
   {
     "id": "screws",
     "name": "Винт",
-    "isRaw":false
+    "isRaw": false
+  },
+  {
+    "id": "rotor",
+    "name": "Ротор",
+    "isRaw": false
+  },
+  {
+    "id": "limestone",
+    "name": "Известняк",
+    "isRaw": true
+  },
+  {
+    "id": "copper_ore",
+    "name": "Медная руда",
+    "isRaw": true
+  },
+  {
+    "id": "caterium_ore",
+    "name": "Катерийная руда",
+    "isRaw": true
+  },
+  {
+    "id": "coal",
+    "name": "Уголь",
+    "isRaw": true
+  },
+  {
+    "id": "raw_quartz",
+    "name": "Неограненный кварц",
+    "isRaw": true
+  },
+  {
+    "id": "sulfur",
+    "name": "Сера",
+    "isRaw": true
+  },
+  {
+    "id": "Bauxite",
+    "name": "Боксит",
+    "isRaw": true
+  },
+  {
+    "id": "sam",
+    "name": "Сим",
+    "isRaw": true
+  },
+  {
+    "id": "uranium",
+    "name": "Уран",
+    "isRaw": true
+  },
+  {
+    "id": "copper_ingot",
+    "name": "Медный слиток",
+    "isRaw": false
+  },
+  {
+    "id": "caterium_ingot",
+    "name": "Слиток катерия",
+    "isRaw": false
+  },
+  {
+    "id": "steel_ingot",
+    "name": "Стальной слиток",
+    "isRaw": false
+  },
+  {
+    "id": "aluminum_ingot",
+    "name": "Алюминиевый слиток",
+    "isRaw": false
+  },
+  {
+    "id": "ficsite_ingot",
+    "name": "Слиток FICSIT",
+    "isRaw": false
+  },
+  {
+    "id": "concrete",
+    "name": "Бетон",
+    "isRaw": false
+  },
+  {
+    "id": "quartz_crystal",
+    "name": "Кварцевый кристалл",
+    "isRaw": false
+  },
+  {
+    "id": "silica",
+    "name": "Кремнезем",
+    "isRaw": false
   }
 ]
