@@ -17,4 +17,6 @@ fun main() {
         println(item)
         if(recipeService.isRaw(item.id))break
     }
+    val calculator = ProductionCalculator(recipeService)
+    val tree = calculator.buildTree("screws",60f)
 }

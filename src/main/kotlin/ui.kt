@@ -1,5 +1,7 @@
 import kotlin.collections.forEach
+fun printTree(node: ProductionNode, prefix: String = "",isLast: Boolean = true) {
 
+}
 fun showCountDownloads(
     items: List<Item>,
     recipes: List<Recipe>
