@@ -21,6 +21,30 @@
       "itemId": "iron_plate",
       "amount": 20
     },
-    "machine": "smelter"
+    "machine": "constructor"
+  },
+  {
+    "id": "iron_rod_constructor",
+    "input": [
+      { "itemId":  "iron_ingot",
+        "amount": 15}
+    ],
+    "output": {
+      "itemId": "iron_rod",
+      "amount": 30
+    },
+    "machine": "constructor"
+  },
+  {
+    "id": "screws_constructor",
+    "input": [
+      { "itemId":  "iron_ingot",
+        "amount": 10}
+    ],
+    "output": {
+      "itemId": "screws",
+      "amount": 40
+    },
+    "machine": "constructor"
   }
 ]

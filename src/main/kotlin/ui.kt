@@ -12,9 +12,9 @@ fun showCountDownloads(
 
     println("Загружено рецептов: ${recipes.size}")
     recipes.forEach { recipe ->
-        println("\nid: ${recipe.id}")
+        println("id: ${recipe.id}")
         println("Машина: ${recipe.machine}")
         println("Вход: ${recipe.input.joinToString { "${it.itemId} x ${it.amount}" }}")
-        println("Выход: ${recipe.output.itemId} x ${recipe.output.amount}")
+        println("Выход: ${recipe.output.itemId} x ${recipe.output.amount}\n")
     }
 }
