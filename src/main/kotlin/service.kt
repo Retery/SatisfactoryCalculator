@@ -25,6 +25,7 @@ class RecipesService(
         return itemsMap.getValue(itemId)
     }
     fun getMachine(recipe: Recipe): String {
+
         return recipe.machine
     }
     fun getMachinePower(recipe: Recipe, percent: Float): Float {

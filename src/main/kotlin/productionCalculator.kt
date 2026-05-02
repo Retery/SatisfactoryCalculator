@@ -56,7 +56,7 @@ fun totalPower(
 
     val remainder = scale % 1 //Остаток для формулы потребления
     val number = scale - remainder // Тупо без формулы
-    println("${recipeService.getMachine(recipe)} предмет - ${recipe.id} кол-во - ${node.count} - проценты ${remainder*100}")
+    //println("${recipeService.getMachine(recipe)} предмет - ${recipe.id} кол-во - ${node.count} - проценты ${remainder*100}")
     val powerPerMachine =recipeService.getMachinePower(recipe,100f)
     val powerMachine = recipeService.getMachinePower(recipe,remainder*100)
 

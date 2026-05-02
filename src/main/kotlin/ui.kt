@@ -6,10 +6,11 @@ fun printTree(
     prefix: String = "",
     isLast: Boolean = true
 ) {
-    val connector = if (isLast) "└──" else "├──"
+    val connector = if (isLast) "└───" else "├───"
     val itemName = recipeService.getItem(node.id).name
-    //val machine = if ()
-    println("$prefix$connector $itemName($) x${node.count}")
+    val machine = if(node.recipe!=null) recipeService.getMachine(node.recipe).
+    replaceFirstChar { it.uppercase() } else "Miner"
+    println("$prefix$connector $itemName ($machine) x${node.count}")
     val newPrefix = if (isLast)"$prefix   " else "$prefix|   "
 
     node.children.forEachIndexed { index, child ->
