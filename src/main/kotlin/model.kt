@@ -16,6 +16,7 @@ data class Item(
 @Serializable
 data class Recipe(
     val id: String,
+    val name: String,
     val input: List<ItemAmount>,
     val output: ItemAmount,
     val machine: String

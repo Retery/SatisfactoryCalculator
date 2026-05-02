@@ -10,6 +10,8 @@ class RecipesService(
         "smelter" to 4f,
         "constructor" to 4f,
         "assembler" to 15f,
+        "foundry" to 16f,
+        "refinery" to 30f,
         "manufacturer" to 55f
     )
     fun isRaw(itemId: ItemId): Boolean {

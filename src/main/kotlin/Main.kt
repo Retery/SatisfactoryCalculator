@@ -11,6 +11,15 @@ fun main() {
     val calculator = ProductionCalculator(recipeService)
     val tree = calculator.buildTree("rotor",13f)
     printTree(tree,recipeService)
-    val total = totalPower(tree,recipeService)
-    println("Total power: $total MW")
+
+    println("\n==Общее количество ресурсов==")
+    val totalResources = collectionResources(tree)
+    totalResources.forEach {(itemId, amount) ->
+        val name = recipeService.getItem(itemId).name
+        println("$name $amount")
+    }
+
+    val totalEnergy = totalPower(tree,recipeService)
+    println("\nTotal power: $totalEnergy MW")
+
 }

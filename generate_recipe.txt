@@ -1,0 +1,19 @@
+{
+  "id": "fdsdfs",
+  "name": "fds",
+  "input": [
+  { 
+        "itemId":  "fdafas",
+        "amount": 2
+},
+{ 
+        "itemId":  "dfafad",
+        "amount": 3
+}
+],
+  "output": {
+    "itemId": "fdadfa",
+    "amount": 2,
+  },
+  "machine": "constructor"
+},
