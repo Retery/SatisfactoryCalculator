@@ -6,11 +6,18 @@ fun printTree(
     prefix: String = "",
     isLast: Boolean = true
 ) {
-    val connector = if (isLast) "└───" else "├───"
+    val connector = if (isLast) "└────" else "├────"
     val itemName = recipeService.getItem(node.id).name
     val machine = if(node.recipe!=null) recipeService.getMachine(node.recipe).
     replaceFirstChar { it.uppercase() } else "Miner"
-    println("$prefix$connector $itemName ($machine) x${node.count}")
+
+    val scale = getScale(node,recipeService)
+    val remainder = scale % 1 //Остаток для формулы потребления
+    val number = scale - remainder
+
+    println("$prefix$connector $itemName ($machine x $number + " +
+            "${(remainder*100).toInt()+1}%) x${node.count}")
+
     val newPrefix = if (isLast)"$prefix   " else "$prefix|   "
 
     node.children.forEachIndexed { index, child ->

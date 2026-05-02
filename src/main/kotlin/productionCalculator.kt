@@ -7,6 +7,8 @@ class ProductionNode(
     val children: List<ProductionNode> = emptyList()
 ){
     fun isLeaf(): Boolean = children.isEmpty()
+
+
 }
 
 class ProductionCalculator(
@@ -64,4 +66,12 @@ fun totalPower(
 
     return currentPower + childrenPower
 
+}
+fun getScale(
+    node: ProductionNode,
+    recipeService: RecipesService
+): Float{
+    val recipe = node.recipe ?: return 0f
+    val outputAmount = recipe.output.amount
+    return node.count / outputAmount
 }
