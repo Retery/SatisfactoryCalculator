@@ -10,28 +10,58 @@
     "isRaw": true
   },
   {
+    "id": "water",
+    "name": "Вода",
+    "isRaw": true
+  },
+  {
+    "id": "crude_oil",
+    "name": "Сырая нефть",
+    "isRaw": true
+  },
+  {
+    "id": "heavy_oil_residue",
+    "name": "Мазут",
+    "isRaw": false
+  },
+  {
+    "id": "fuel",
+    "name": "Топливо",
+    "isRaw": false
+  },
+  {
+    "id": "liquid_biofuel",
+    "name": "Жидкое биотопливо",
+    "isRaw": false
+  },
+  {
+    "id": "turbofuel",
+    "name": "Турботопливо",
+    "isRaw": false
+  },
+  {
+    "id": "alumina_solution",
+    "name": "Раствор глинозема",
+    "isRaw": false
+  },
+  {
+    "id": "sulfuric_acid",
+    "name": "Серная кислота",
+    "isRaw": false
+  },
+  {
+    "id": "nitric_acid",
+    "name": "Азотная кислота",
+    "isRaw": false
+  },
+  {
+    "id": "dissolved_silica",
+    "name": "Раствор кременезема",
+    "isRaw": false
+  },
+  {
     "id": "iron_ingot",
     "name": "Железный слиток",
-    "isRaw": false
-  },
-  {
-    "id": "iron_plate",
-    "name": "Железная пластина",
-    "isRaw": false
-  },
-  {
-    "id": "iron_rod",
-    "name": "Железный прут",
-    "isRaw": false
-  },
-  {
-    "id": "screws",
-    "name": "Винт",
-    "isRaw": false
-  },
-  {
-    "id": "rotor",
-    "name": "Ротор",
     "isRaw": false
   },
   {
@@ -117,6 +147,236 @@
   {
     "id": "silica",
     "name": "Кремнезем",
+    "isRaw": false
+  },
+  {
+    "id": "copper_powder",
+    "name": "Медный порошок",
+    "isRaw": false
+  },
+  {
+    "id": "polymer_resin",
+    "name": "Полимерная смола",
+    "isRaw": false
+  },
+  {
+    "id": "petroleum_coke",
+    "name": "Нефтяной кокс",
+    "isRaw": false
+  },
+  {
+    "id": "aluminium_scrap",
+    "name": "Алюминиевый лом",
+    "isRaw": false
+  },
+  {
+    "id": "nitrogen_gas",
+    "name": "Азот",
+    "isRaw": true
+  },
+  {
+    "id": "rocket_fuel",
+    "name": "Ракетное топливо",
+    "isRaw": false
+  },
+  {
+    "id": "ionized_fuel",
+    "name": "Ионизированное топливо",
+    "isRaw": false
+  },
+  {
+    "id": "dark_matter_residue",
+    "name": "Остатки темной материи",
+    "isRaw": false
+  },
+  {
+    "id": "excited_photonic_matter",
+    "name": "Возбужденная фотонная материя",
+    "isRaw": false
+  },
+  {
+    "id": "iron_rod",
+    "name": "Железный прут",
+    "isRaw": false
+  },
+  {
+    "id": "screws",
+    "name": "Винт",
+    "isRaw": false
+  },
+  {
+    "id": "iron_plate",
+    "name": "Железная пластина",
+    "isRaw": false
+  },
+  {
+    "id": "reinforced_iron_plate",
+    "name": "Усиленная железная пластина",
+    "isRaw": false
+  },
+  {
+    "id": "copper_sheet",
+    "name": "Медный лист",
+    "isRaw": false
+  },
+  {
+    "id": "alclad_aluminum_sheet",
+    "name": "Дюралюминиевый лист",
+    "isRaw": false
+  },
+  {
+    "id": "aluminum_casing",
+    "name": "Алюминиевый корпус",
+    "isRaw": false
+  },
+  {
+    "id": "steel_pipe",
+    "name": "Стальная труба",
+    "isRaw": false
+  },
+  {
+    "id": "steel_beam",
+    "name": "Стальная балка",
+    "isRaw": false
+  },
+  {
+    "id": "encased_industrial_beam",
+    "name": "Железобетонная балка",
+    "isRaw": false
+  },
+  {
+    "id": "modular_frame",
+    "name": "Модульный каркас",
+    "isRaw": false
+  },
+  {
+    "id": "heavy_modular_frame",
+    "name": "Тяжелый модульный каркас",
+    "isRaw": false
+  },
+  {
+    "id": "fused_modular_frame",
+    "name": "Сплавленный модульный каркас",
+    "isRaw": false
+  },
+  {
+    "id": "ficsite_trigon",
+    "name": "Тригон FICSIT",
+    "isRaw": false
+  },
+  {
+    "id": "fabric",
+    "name": "Ткань",
+    "isRaw": false
+  },
+  {
+    "id": "plastic",
+    "name": "Пластик",
+    "isRaw": false
+  },
+  {
+    "id": "rubber",
+    "name": "Резина",
+    "isRaw": false
+  },
+  {
+    "id": "rotor",
+    "name": "Ротор",
+    "isRaw": false
+  },
+  {
+    "id": "stator",
+    "name": "Статор",
+    "isRaw": false
+  },
+  {
+    "id": "battery",
+    "name": "Аккумулятор",
+    "isRaw": false
+  },
+  {
+    "id": "motor",
+    "name": "Мотор",
+    "isRaw": false
+  },
+  {
+    "id": "heat_sink",
+    "name": "Радиатор",
+    "isRaw": false
+  },
+  {
+    "id": "cooling_system",
+    "name": "Система охлаждения",
+    "isRaw": false
+  },
+  {
+    "id": "turbo_motor",
+    "name": "Турбомотор",
+    "isRaw": false
+  },
+  {
+    "id": "wire",
+    "name": "Проволока",
+    "isRaw": false
+  },
+  {
+    "id": "cable",
+    "name": "Кабель",
+    "isRaw": false
+  },
+  {
+    "id": "quickwire",
+    "name": "Сверхпроволока",
+    "isRaw": false
+  },
+  {
+    "id": "circuit_board",
+    "name": "Печатная плата",
+    "isRaw": false
+  },
+  {
+    "id": "ai_limiter",
+    "name": "Ограничитель ИИ",
+    "isRaw": false
+  },
+  {
+    "id": "high_speed_connector",
+    "name": "Скоростной разъем",
+    "isRaw": false
+  },
+  {
+    "id": "reanimated_sam",
+    "name": "Активизированная СИМ",
+    "isRaw": false
+  },
+  {
+    "id": "sam_fluctuator",
+    "name": "Флуктуатор СИМ",
+    "isRaw": false
+  },
+  {
+    "id": "computer",
+    "name": "Компьютер",
+    "isRaw": false
+  },
+  {
+    "id": "supercomputer",
+    "name": "Суперкомпьютер",
+    "isRaw": false
+  },
+  {
+    "id": "radio_control_unit",
+    "name": "Блок радиоуправления",
+    "isRaw": false
+  },
+  {
+    "id": "crystal_oscillator",
+    "name": "Кварцевый резонатор",
+    "isRaw": false
+  },
+  {
+    "id": "superposition_oscillator",
+    "name": "Суперпозиционный резонатор",
     "isRaw": false
   }
 ]

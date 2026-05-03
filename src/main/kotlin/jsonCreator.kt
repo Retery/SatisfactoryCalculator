@@ -2,7 +2,7 @@ import java.io.File
 
 fun main(){
     recipe()
-
+    //items()
 
 }
 private fun recipe() {
@@ -45,18 +45,35 @@ private fun recipe() {
           
         """.trimIndent())
             }
-            println("Введите id выходного предмета:")
-            val outputId = readln()
+            println("Введите id выходного предмета, если $id, то 1:")
+            var outputId: String? = readln()
+            if (outputId == "1") outputId = id
             println("Введите количество выходного предмета:")
             val outputCount = readln()
+            println("Выберите машину из списка:")
+            val machineList = listOf(
+                "smelter",
+                "constructor",
+                "assembler",
+                "foundry",
+                "refinery" ,
+                "manufacturer",
+                "converter",
+                "blender"
+            )
+            machineList.forEachIndexed { index, machine ->
+                println("${index+1}. ${machine}")
+            }
+
+            val machine = machineList[(readln().toIntOrNull() ?: 1)-1]
             file.appendText(
                 """
     ],
       "output": {
         "itemId": "$outputId",
-        "amount": $outputCount,
+        "amount": $outputCount
       },
-      "machine": "constructor"
+      "machine": "$machine"
     },
         """.trimIndent())
 

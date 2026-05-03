@@ -1,0 +1,25 @@
+{
+  "id": "computeer",
+  "name": "Компьютер",
+  "isRaw": false
+},
+{
+  "id": "supercomputer",
+  "name": "Суперкомпьютер",
+  "isRaw": false
+},
+{
+  "id": "radio_control_unit",
+  "name": "Блок радиоуправления",
+  "isRaw": false
+},
+{
+  "id": "crystal_oscillator",
+  "name": "Кварцевый резонатор",
+  "isRaw": false
+},
+{
+  "id": "superposition_oscillator",
+  "name": "Суперпозиционный резонатор",
+  "isRaw": false
+},

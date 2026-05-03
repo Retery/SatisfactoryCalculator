@@ -15,6 +15,566 @@
     "machine": "smelter"
   },
   {
+    "id": "alternate_basic_iron_ingot_foundry",
+    "name": "Альт: обычный железный слиток",
+    "input": [
+      {
+        "itemId": "iron_ore",
+        "amount": 25
+      },
+      {
+        "itemId": "limestone",
+        "amount": 40
+      }
+    ],
+    "output": {
+      "itemId": "iron_ingot",
+      "amount": 50
+    },
+    "machine": "foundry"
+  },
+  {
+    "id": "alternate_iron_alloy_ingot",
+    "name": "Альт: слиток железного сплава",
+    "input": [
+      {
+        "itemId": "iron_ore",
+        "amount": 40
+      },
+      {
+        "itemId": "copper_ore",
+        "amount": 10
+      }
+    ],
+    "output": {
+      "itemId": "iron_ingot",
+      "amount": 75
+    },
+    "machine": "foundry"
+  },
+  {
+    "id": "alternate_leached_iron_ingot",
+    "name": "Альт: выщелоченный железный слиток",
+    "input": [
+      {
+        "itemId": "iron_ore",
+        "amount": 50
+      },
+      {
+        "itemId": "sulfuric_acid",
+        "amount": 10
+      }
+    ],
+    "output": {
+      "itemId": "iron_ingot",
+      "amount": 100
+    },
+    "machine": "refinery"
+  },
+  {
+    "id": "alternate_pure_iron_ingot",
+    "name": "Альт: слиток чистого железа",
+    "input": [
+      {
+        "itemId": "iron_ore",
+        "amount": 35
+      },
+      {
+        "itemId": "water",
+        "amount": 20
+      }
+    ],
+    "output": {
+      "itemId": "iron_ingot",
+      "amount": 65
+    },
+    "machine": "refinery"
+  },
+  {
+    "id": "copper_ingot",
+    "name": "Медный слиток",
+    "input": [
+      {
+        "itemId": "copper_ore",
+        "amount": 30
+      }
+    ],
+    "output": {
+      "itemId": "copper_ingot",
+      "amount": 30
+    },
+    "machine": "smelter"
+  },
+  {
+    "id": "alt_pure_copper_ingot",
+    "name": "Альт: слиток чистой меди",
+    "input": [
+      {
+        "itemId": "copper_ore",
+        "amount": 15
+      },
+      {
+        "itemId": "water",
+        "amount": 10
+      }
+    ],
+    "output": {
+      "itemId": "copper_ingot",
+      "amount": 37.5
+    },
+    "machine": "refinery"
+  },
+  {
+    "id": "caterium_ore",
+    "name": "Катерийный слиток",
+    "input": [
+      {
+        "itemId": "caterium_ore",
+        "amount": 45
+      }
+    ],
+    "output": {
+      "itemId": "caterium_ingot",
+      "amount": 15
+    },
+    "machine": "smelter"
+  },
+  {
+    "id": "steel_ingot",
+    "name": "Стальной слиток",
+    "input": [
+      {
+        "itemId": "iron_ore",
+        "amount": 45
+      },
+      {
+        "itemId": "coal",
+        "amount": 45
+      }
+    ],
+    "output": {
+      "itemId": "steel_ingot",
+      "amount": 45
+    },
+    "machine": "foundry"
+  },
+  {
+    "id": "alt_solid_steel_ingot",
+    "name": "Альт: прочный стальной слиток",
+    "input": [
+      {
+        "itemId": "iron_ingot",
+        "amount": 40
+      },
+      {
+        "itemId": "coal",
+        "amount": 40
+      }
+    ],
+    "output": {
+      "itemId": "steel_ingot",
+      "amount": 60
+    },
+    "machine": "foundry"
+  },
+  {
+    "id": "aluminum_ingot",
+    "name": "Алюминиевый слиток",
+    "input": [
+      {
+        "itemId": "aluminum_scrap",
+        "amount": 90
+      },
+      {
+        "itemId": "silica",
+        "amount": 75
+      }
+    ],
+    "output": {
+      "itemId": "aluminum_ingot",
+      "amount": 60
+    },
+    "machine": "foundry"
+  },
+  {
+    "id": "alt_pure_aluminum_ingot",
+    "name": "Альт: слиток чистого алюминия",
+    "input": [
+      {
+        "itemId": "aluminum_scrap",
+        "amount": 60
+      }
+    ],
+    "output": {
+      "itemId": "aluminum_ingot",
+      "amount": 30
+    },
+    "machine": "smelter"
+  },
+  {
+    "id": "ficsitre_ingot_aluminum",
+    "name": "Слиток FICSIT (алюминий)",
+    "input": [
+      {
+        "itemId": "reanimated_sam",
+        "amount": 60
+      },
+      {
+        "itemId": "aluminum_ingot",
+        "amount": 120
+      }
+    ],
+    "output": {
+      "itemId": "ficsite_ingot",
+      "amount": 30
+    },
+    "machine": "converter"
+  },
+  {
+    "id": "ficsite_ingot_caterium",
+    "name": "Слиток FICSIT (катерий)",
+    "input": [
+      {
+        "itemId": "reanimated_sam",
+        "amount": 45
+      },
+      {
+        "itemId": "caterium_ingot",
+        "amount": 60
+      }
+    ],
+    "output": {
+      "itemId": "ficsite_ingot",
+      "amount": 15
+    },
+    "machine": "converter"
+  },
+  {
+    "id": "ficsite_ingot_iron",
+    "name": "Слиток FICSIT (железо)",
+    "input": [
+      {
+        "itemId": "reanimated_sam",
+        "amount": 40
+      },
+      {
+        "itemId": "iron_ingot",
+        "amount": 240
+      }
+    ],
+    "output": {
+      "itemId": "ficsite_ingot",
+      "amount": 10
+    },
+    "machine": "converter"
+  },
+  {
+    "id": "concrete",
+    "name": "Бетон",
+    "input": [
+      {
+        "itemId": "limestone",
+        "amount": 45
+      }
+    ],
+    "output": {
+      "itemId": "concrete",
+      "amount": 15
+    },
+    "machine": "constructor"
+  },
+  {
+    "id": "quartz_crystal",
+    "name": "Кварцевый кристалл",
+    "input": [
+      {
+        "itemId": "raw_quartz",
+        "amount": 37.5
+      }
+    ],
+    "output": {
+      "itemId": "quartz_crystal",
+      "amount": 22.5
+    },
+    "machine": "constructor"
+  },
+  {
+    "id": "alt_fused_quartz_crystal",
+    "name": "Альт: плавленный кварцевый кристалл",
+    "input": [
+      {
+        "itemId": "raw_quartz",
+        "amount": 75
+      },
+      {
+        "itemId": "coal",
+        "amount": 36
+      }
+    ],
+    "output": {
+      "itemId": "quartz_crystal",
+      "amount": 54
+    },
+    "machine": "foundry"
+  },
+  {
+    "id": "silica",
+    "name": "Кремнезем",
+    "input": [
+      {
+        "itemId": "raw_quartz",
+        "amount": 22.5
+      }
+    ],
+    "output": {
+      "itemId": "silica",
+      "amount": 37.5
+    },
+    "machine": "constructor"
+  },
+  {
+    "id": "copper_powder",
+    "name": "Медный порошок",
+    "input": [
+      {
+        "itemId": "copper_ingot",
+        "amount": 300
+      }
+    ],
+    "output": {
+      "itemId": "copper_powder",
+      "amount": 50
+    },
+    "machine": "constructor"
+  },
+  {
+    "id": "polymer_resin",
+    "name": "Полимерная смола",
+    "input": [
+      {
+        "itemId": "crude_oil",
+        "amount": 60
+      }
+    ],
+    "output": {
+      "itemId": "polymer_resin",
+      "amount": 30
+    },
+    "machine": "refinery"
+  },
+  {
+    "id": "petroleum_coke",
+    "name": "Нефтяной кокс",
+    "input": [
+      {
+        "itemId": "heavy_oil_residue",
+        "amount": 40
+      }
+    ],
+    "output": {
+      "itemId": "petroleum_coke",
+      "amount": 120
+    },
+    "machine": "refinery"
+  },
+  {
+    "id": "aluminum_scrap",
+    "name": "Алюминиевый лом",
+    "input": [
+      {
+        "itemId": "alumina_solution",
+        "amount": 240
+      },
+      {
+        "itemId": "coal",
+        "amount": 120
+      }
+    ],
+    "output": {
+      "itemId": "aluminum_scrap",
+      "amount": 360
+    },
+    "machine": "refinery"
+  },
+  {
+    "id": "masut_plastic",
+    "name": "Мазут пластик",
+    "input": [
+      {
+        "itemId": "crude_oil",
+        "amount": 30
+      }
+    ],
+    "output": {
+      "itemId": "heavy_oil_residue",
+      "amount": 20
+    },
+    "machine": "refinery"
+  },
+  {
+    "id": "masut_rubber",
+    "name": "Мазут резина",
+    "input": [
+      {
+        "itemId": "crude_oil",
+        "amount": 30
+      }
+    ],
+    "output": {
+      "itemId": "heavy_oil_residue",
+      "amount": 20
+    },
+    "machine": "refinery"
+  },
+  {
+    "id": "fuel",
+    "name": "Топливо",
+    "input": [
+      {
+        "itemId": "crude_oil",
+        "amount": 60
+      }
+    ],
+    "output": {
+      "itemId": "fuel",
+      "amount": 40
+    },
+    "machine": "refinery"
+  },
+  {
+    "id": "alt_diluted_fuel",
+    "name": "Альт: разбавленное топливо",
+    "input": [
+      {
+        "itemId": "heavy_oil_residue",
+        "amount": 50
+      },
+      {
+        "itemId": "water",
+        "amount": 100
+      }
+    ],
+    "output": {
+      "itemId": "fuel",
+      "amount": 100
+    },
+    "machine": "blender"
+  },
+  {
+    "id": "residual_fuel",
+    "name": "Остаточное топливо",
+    "input": [
+      {
+        "itemId": "heavy_oil_residue",
+        "amount": 60
+      }
+    ],
+    "output": {
+      "itemId": "fuel",
+      "amount": 40
+    },
+    "machine": "refinery"
+  },
+  {
+    "id": "turbofuel",
+    "name": "Турботопливо",
+    "input": [
+      {
+        "itemId": "fuel",
+        "amount": 22.5
+      },
+      {
+        "itemId": "compacted_coal",
+        "amount": 15
+      }
+    ],
+    "output": {
+      "itemId": "turbofuel",
+      "amount": 18.75
+    },
+    "machine": "refinery"
+  },
+  {
+    "id": "alumina_solution",
+    "name": "Раствор глинозема",
+    "input": [
+      {
+        "itemId": "bauxite",
+        "amount": 120
+      },
+      {
+        "itemId": "water",
+        "amount": 180
+      }
+    ],
+    "output": {
+      "itemId": "alumina_solution",
+      "amount": 120
+    },
+    "machine": "refinery"
+  },
+  {
+    "id": "alt_sloppy_alumina",
+    "name": "Альт: разжиженный глинозем",
+    "input": [
+      {
+        "itemId": "bauxite",
+        "amount": 200
+      },
+      {
+        "itemId": "water",
+        "amount": 200
+      }
+    ],
+    "output": {
+      "itemId": "alumina_solution",
+      "amount": 240
+    },
+    "machine": "refinery"
+  },
+  {
+    "id": "sulfuric_acid",
+    "name": "Серная кислота",
+    "input": [
+      {
+        "itemId": "sulfur",
+        "amount": 50
+      },
+      {
+        "itemId": "water",
+        "amount": 50
+      }
+    ],
+    "output": {
+      "itemId": "sulfuric_acid",
+      "amount": 50
+    },
+    "machine": "refinery"
+  },
+  {
+    "id": "nitric_acid",
+    "name": "Азотная кислота",
+    "input": [
+      {
+        "itemId": "nitrogen_gas",
+        "amount": 120
+      },
+      {
+        "itemId": "water",
+        "amount": 30
+      },
+      {
+        "itemId": "iron_plate",
+        "amount": 10
+      }
+    ],
+    "output": {
+      "itemId": "nitric_acid",
+      "amount": 30
+    },
+    "machine": "blender"
+  },
+  {
     "id": "iron_plate_constructor",
     "name": "Железная пластина",
     "input": [

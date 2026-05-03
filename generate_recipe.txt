@@ -1,19 +1,41 @@
 {
-  "id": "fdsdfs",
-  "name": "fds",
+  "id": "sulfuric_acid",
+  "name": "Серная кислота",
   "input": [
   { 
-        "itemId":  "fdafas",
-        "amount": 2
+        "itemId":  "sulfur",
+        "amount": 50
 },
 { 
-        "itemId":  "dfafad",
-        "amount": 3
+        "itemId":  "water",
+        "amount": 50
 }
 ],
   "output": {
-    "itemId": "fdadfa",
-    "amount": 2,
+    "itemId": "sulfuric_acid",
+    "amount": 50
   },
-  "machine": "constructor"
+  "machine": "refinery"
+},{
+  "id": "nitric_acid",
+  "name": "Азотная кислота",
+  "input": [
+  { 
+        "itemId":  "nitrogen_gas",
+        "amount": 120
+},
+{ 
+        "itemId":  "water",
+        "amount": 30
+},
+{ 
+        "itemId":  "iron_plate",
+        "amount": 10
+}
+],
+  "output": {
+    "itemId": "nitric_acid",
+    "amount": 30
+  },
+  "machine": "blender"
 },
