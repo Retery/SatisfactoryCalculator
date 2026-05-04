@@ -575,19 +575,84 @@
     "machine": "blender"
   },
   {
-    "id": "iron_plate_constructor",
-    "name": "Железная пластина",
+    "id": "rocket_fuel",
+    "name": "Ракетное топливо",
     "input": [
       {
-        "itemId": "iron_ingot",
-        "amount": 30
+        "itemId": "turbofuel",
+        "amount": 60
+      },
+      {
+        "itemId": "nitric_acid",
+        "amount": 10
       }
     ],
     "output": {
-      "itemId": "iron_plate",
-      "amount": 20
+      "itemId": "rocket_fuel",
+      "amount": 100
     },
-    "machine": "constructor"
+    "machine": "blender"
+  },
+  {
+    "id": "ionized_fuel",
+    "name": "Ионизированное топливо",
+    "input": [
+      {
+        "itemId": "rocket_fuel",
+        "amount": 40
+      },
+      {
+        "itemId": "power_shard",
+        "amount": 2.5
+      }
+    ],
+    "output": {
+      "itemId": "ionized_fuel",
+      "amount": 40
+    },
+    "machine": "refinery"
+  },
+  {
+    "id": "ai_expansion_server_dark_matter_residue",
+    "name": "Расширенный сервер ИИ(остатки темной материи)",
+    "input": [
+      {
+        "itemId": "magnetic_field_generator",
+        "amount": 4
+      },
+      {
+        "itemId": "neural_quantum_processor",
+        "amount": 4
+      },
+      {
+        "itemId": "superposition_oscillator",
+        "amount": 4
+      },
+      {
+        "itemId": "excited_photonic_matter",
+        "amount": 100
+      }
+    ],
+    "output": {
+      "itemId": "dark_matter_residue",
+      "amount": 100
+    },
+    "machine": "quantum_encoder"
+  },
+  {
+    "id": "dark_matter_residue",
+    "name": "Остатки темной материи",
+    "input": [
+      {
+        "itemId": "reanimated_sam",
+        "amount": 50
+      }
+    ],
+    "output": {
+      "itemId": "dark_matter_residue",
+      "amount": 100
+    },
+    "machine": "converter"
   },
   {
     "id": "iron_rod_constructor",
@@ -635,6 +700,389 @@
     "machine": "constructor"
   },
   {
+    "id": "iron_plate_constructor",
+    "name": "Железная пластина",
+    "input": [
+      {
+        "itemId": "iron_ingot",
+        "amount": 30
+      }
+    ],
+    "output": {
+      "itemId": "iron_plate",
+      "amount": 20
+    },
+    "machine": "constructor"
+  },
+  {
+    "id": "reinforced_iron_plate",
+    "name": "Усиленная железная пластина",
+    "input": [
+      {
+        "itemId": "iron_plate",
+        "amount": 30
+      },
+      {
+        "itemId": "screws",
+        "amount": 60
+      }
+    ],
+    "output": {
+      "itemId": "reinforced_iron_plate",
+      "amount": 5
+    },
+    "machine": "assembler"
+  },
+  {
+    "id": "alt_stitched_iron_plate",
+    "name": "Альт: Прошитая железная пластина",
+    "input": [
+      {
+        "itemId": "iron_plate",
+        "amount": 18.75
+      },
+      {
+        "itemId": "wire",
+        "amount": 37.5
+      }
+    ],
+    "output": {
+      "itemId": "reinforced_iron_plate",
+      "amount": 5.63
+    },
+    "machine": "assembler"
+  },
+  {
+    "id": "copper_sheet",
+    "name": "Медный лист",
+    "input": [
+      {
+        "itemId": "copper_ingot",
+        "amount": 20
+      }
+    ],
+    "output": {
+      "itemId": "copper_sheet",
+      "amount": 10
+    },
+    "machine": "constructor"
+  },
+  {
+    "id": "alclad_aluminum_sheet",
+    "name": "Дюралюминиевый лист",
+    "input": [
+      {
+        "itemId": "aluminium_ingot",
+        "amount": 30
+      },
+      {
+        "itemId": "copper_ingot",
+        "amount": 10
+      }
+    ],
+    "output": {
+      "itemId": "alclad_aluminum_sheet",
+      "amount": 30
+    },
+    "machine": "assembler"
+  },
+  {
+    "id": "aluminum_casing",
+    "name": "Алюминиевый корпус",
+    "input": [
+      {
+        "itemId": "aluminum_ingot",
+        "amount": 90
+      }
+    ],
+    "output": {
+      "itemId": "aluminum_casing",
+      "amount": 60
+    },
+    "machine": "constructor"
+  },
+  {
+    "id": "alt_alclad_casing",
+    "name": "Альт: дюралюминиевый корпус",
+    "input": [
+      {
+        "itemId": "aluminum_ingot",
+        "amount": 150
+      },
+      {
+        "itemId": "copper_ingot",
+        "amount": 75
+      }
+    ],
+    "output": {
+      "itemId": "aluminum_casing",
+      "amount": 112.5
+    },
+    "machine": "assembler"
+  },
+  {
+    "id": "steel_pipe",
+    "name": "Стальная труба",
+    "input": [
+      {
+        "itemId": "steel_ingot",
+        "amount": 30
+      }
+    ],
+    "output": {
+      "itemId": "steel_pipe",
+      "amount": 20
+    },
+    "machine": "constructor"
+  },
+  {
+    "id": "alt_iron_pipe",
+    "name": "Альт: железная труба",
+    "input": [
+      {
+        "itemId": "iron_ingot",
+        "amount": 100
+      }
+    ],
+    "output": {
+      "itemId": "steel_pipe",
+      "amount": 25
+    },
+    "machine": "constructor"
+  },
+  {
+    "id": "steel_beam",
+    "name": "Стальная балка",
+    "input": [
+      {
+        "itemId": "steel_ingot",
+        "amount": 60
+      }
+    ],
+    "output": {
+      "itemId": "steel_beam",
+      "amount": 15
+    },
+    "machine": "constructor"
+  },
+  {
+    "id": "encased_industrial_beam",
+    "name": "Железобетонная балка",
+    "input": [
+      {
+        "itemId": "steel_beam",
+        "amount": 18
+      },
+      {
+        "itemId": "concrete",
+        "amount": 36
+      }
+    ],
+    "output": {
+      "itemId": "encased_industrial_beam",
+      "amount": 6
+    },
+    "machine": "assembler"
+  },
+  {
+    "id": "alt_encased_industrial_pipe",
+    "name": "Альт: железобетонная труба",
+    "input": [
+      {
+        "itemId": "steel_pipe",
+        "amount": 24
+      },
+      {
+        "itemId": "concrete",
+        "amount": 20
+      }
+    ],
+    "output": {
+      "itemId": "encased_industrial_beam",
+      "amount": 4
+    },
+    "machine": "assembler"
+  },
+  {
+    "id": "modular_frame",
+    "name": "Модульный каркас",
+    "input": [
+      {
+        "itemId": "reinforced_iron_plate",
+        "amount": 3
+      },
+      {
+        "itemId": "iron_rod",
+        "amount": 12
+      }
+    ],
+    "output": {
+      "itemId": "modular_frame",
+      "amount": 2
+    },
+    "machine": "assembler"
+  },
+  {
+    "id": "alt_bolted_frame",
+    "name": "Альт: сборный каркас",
+    "input": [
+      {
+        "itemId": "reinforced_iron_plate",
+        "amount": 7.5
+      },
+      {
+        "itemId": "screws",
+        "amount": 140
+      }
+    ],
+    "output": {
+      "itemId": "modular_frame",
+      "amount": 5
+    },
+    "machine": "assembler"
+  },
+  {
+    "id": "alt_steeled_frame",
+    "name": "Закаленный каркас",
+    "input": [
+      {
+        "itemId": "reinforced_iron_plate",
+        "amount": 2
+      },
+      {
+        "itemId": "steel_pipe",
+        "amount": 10
+      }
+    ],
+    "output": {
+      "itemId": "modular_frame",
+      "amount": 3
+    },
+    "machine": "assembler"
+  },
+  {
+    "id": "heavy_modular_frame",
+    "name": "Тяжелый модульный каркас",
+    "input": [
+      {
+        "itemId": "modular_frame",
+        "amount": 10
+      },
+      {
+        "itemId": "steel_pipe",
+        "amount": 40
+      },
+      {
+        "itemId": "encased_industrial_beam",
+        "amount": 10
+      },
+      {
+        "itemId": "screws",
+        "amount": 240
+      }
+    ],
+    "output": {
+      "itemId": "heavy_modular_frame",
+      "amount": 2
+    },
+    "machine": "manufacturer"
+  },
+  {
+    "id": "alt_heavy_encased_frame",
+    "name": "Альт: тяжелый железобетонный каркас",
+    "input": [
+      {
+        "itemId": "modular_frame",
+        "amount": 7.5
+      },
+      {
+        "itemId": "encased_industrial_beam",
+        "amount": 9.38
+      },
+      {
+        "itemId": "steel_pipe",
+        "amount": 33.75
+      },
+      {
+        "itemId": "concrete",
+        "amount": 20.63
+      }
+    ],
+    "output": {
+      "itemId": "heavy_modular_frame",
+      "amount": 2.81
+    },
+    "machine": "manufacturer"
+  },
+  {
+    "id": "fused_modular_frame",
+    "name": "Сплавленный модульный каркас",
+    "input": [
+      {
+        "itemId": "heavy_modular_frame",
+        "amount": 1.5
+      },
+      {
+        "itemId": "aluminum_casing",
+        "amount": 75
+      },
+      {
+        "itemId": "nitrogen_gas",
+        "amount": 37.5
+      }
+    ],
+    "output": {
+      "itemId": "fused_modular_frame",
+      "amount": 1.5
+    },
+    "machine": "manufacturer"
+  },
+  {
+    "id": "ficsite_trigon",
+    "name": "Тригон FICSIT",
+    "input": [
+      {
+        "itemId": "ficsite_ingot",
+        "amount": 10
+      }
+    ],
+    "output": {
+      "itemId": "ficsite_trigon",
+      "amount": 30
+    },
+    "machine": "constructor"
+  },
+  {
+    "id": "plastic",
+    "name": "Пластик",
+    "input": [
+      {
+        "itemId": "crude_oil",
+        "amount": 30
+      }
+    ],
+    "output": {
+      "itemId": "plastic",
+      "amount": 20
+    },
+    "machine": "refinery"
+  },
+  {
+    "id": "rubber",
+    "name": "Резина",
+    "input": [
+      {
+        "itemId": "crude_oil",
+        "amount": 30
+      }
+    ],
+    "output": {
+      "itemId": "rubber",
+      "amount": 20
+    },
+    "machine": "refinery"
+  },
+  {
     "id": "rotor_assembler",
     "name": "Ротор",
     "input": [
@@ -652,5 +1100,470 @@
       "amount": 4
     },
     "machine": "assembler"
+  },
+  {
+    "id": "alt_copper_rotor",
+    "name": "Альт: медный ротор",
+    "input": [
+      {
+        "itemId": "copper_sheet",
+        "amount": 22.5
+      },
+      {
+        "itemId": "screws",
+        "amount": 195
+      }
+    ],
+    "output": {
+      "itemId": "rotor",
+      "amount": 11.25
+    },
+    "machine": "assembler"
+  },
+  {
+    "id": "stator",
+    "name": "Статор",
+    "input": [
+      {
+        "itemId": "steel_pipe",
+        "amount": 15
+      },
+      {
+        "itemId": "wire",
+        "amount": 40
+      }
+    ],
+    "output": {
+      "itemId": "stator",
+      "amount": 5
+    },
+    "machine": "assembler"
+  },
+  {
+    "id": "battery",
+    "name": "Аккумулятор",
+    "input": [
+      {
+        "itemId": "sulfuric_acid",
+        "amount": 50
+      },
+      {
+        "itemId": "alumina_solution",
+        "amount": 40
+      },
+      {
+        "itemId": "aluminum_casing",
+        "amount": 20
+      }
+    ],
+    "output": {
+      "itemId": "battery",
+      "amount": 20
+    },
+    "machine": "blender"
+  },
+  {
+    "id": "motor",
+    "name": "Мотор",
+    "input": [
+      {
+        "itemId": "rotor",
+        "amount": 10
+      },
+      {
+        "itemId": "stator",
+        "amount": 10
+      }
+    ],
+    "output": {
+      "itemId": "motor",
+      "amount": 5
+    },
+    "machine": "assembler"
+  },
+  {
+    "id": "alt_rigor_motor",
+    "name": "Альт: высокоточный мотор",
+    "input": [
+      {
+        "itemId": "rotor",
+        "amount": 3.75
+      },
+      {
+        "itemId": "stator",
+        "amount": 3.75
+      },
+      {
+        "itemId": "crystal_oscillator",
+        "amount": 1.25
+      }
+    ],
+    "output": {
+      "itemId": "motor",
+      "amount": 7.5
+    },
+    "machine": "manufacturer"
+  },
+  {
+    "id": "heat_sink",
+    "name": "Радиатор",
+    "input": [
+      {
+        "itemId": "alclad_aluminum_sheet",
+        "amount": 37.5
+      },
+      {
+        "itemId": "copper_sheet",
+        "amount": 22.5
+      }
+    ],
+    "output": {
+      "itemId": "heat_sink",
+      "amount": 7.5
+    },
+    "machine": "assembler"
+  },
+  {
+    "id": "alt_heat_exchanger",
+    "name": "Альт: теплообменник",
+    "input": [
+      {
+        "itemId": "aluminum_casing",
+        "amount": 30
+      },
+      {
+        "itemId": "rubber",
+        "amount": 30
+      }
+    ],
+    "output": {
+      "itemId": "heat_sink",
+      "amount": 10
+    },
+    "machine": "assembler"
+  },
+  {
+    "id": "cooling_system",
+    "name": "Система охлаждения",
+    "input": [
+      {
+        "itemId": "heat_sink",
+        "amount": 12
+      },
+      {
+        "itemId": "rubber",
+        "amount": 12
+      },
+      {
+        "itemId": "water",
+        "amount": 30
+      },
+      {
+        "itemId": "nitrogen_gas",
+        "amount": 150
+      }
+    ],
+    "output": {
+      "itemId": "cooling_system",
+      "amount": 6
+    },
+    "machine": "blender"
+  },
+  {
+    "id": "alt_cooling_device",
+    "name": "Альт: устройство охлаждения",
+    "input": [
+      {
+        "itemId": "heat_sink",
+        "amount": 10
+      },
+      {
+        "itemId": "motor",
+        "amount": 2.5
+      },
+      {
+        "itemId": "nitrogen_gas",
+        "amount": 60
+      }
+    ],
+    "output": {
+      "itemId": "cooling_system",
+      "amount": 5
+    },
+    "machine": "blender"
+  },
+  {
+    "id": "turbo_motor",
+    "name": "Турбомотор",
+    "input": [
+      {
+        "itemId": "cooling_system",
+        "amount": 7.5
+      },
+      {
+        "itemId": "radio_control_unit",
+        "amount": 3.75
+      },
+      {
+        "itemId": "motor",
+        "amount": 7.5
+      },
+      {
+        "itemId": "rubber",
+        "amount": 45
+      }
+    ],
+    "output": {
+      "itemId": "turbo_motor",
+      "amount": 1.88
+    },
+    "machine": "manufacturer"
+  },
+  {
+    "id": "alt_turbo_electric_motor",
+    "name": "Альт: электрический турбомотор",
+    "input": [
+      {
+        "itemId": "motor",
+        "amount": 6.56
+      },
+      {
+        "itemId": "radio_control_unit",
+        "amount": 8.44
+      },
+      {
+        "itemId": "electromagnetic_control_rod",
+        "amount": 4.69
+      },
+      {
+        "itemId": "rotor",
+        "amount": 6.56
+      }
+    ],
+    "output": {
+      "itemId": "turbo_motor",
+      "amount": 2.81
+    },
+    "machine": "manufacturer"
+  },
+  {
+    "id": "wire",
+    "name": "Проволока",
+    "input": [
+      {
+        "itemId": "copper_ingot",
+        "amount": 15
+      }
+    ],
+    "output": {
+      "itemId": "wire",
+      "amount": 30
+    },
+    "machine": "constructor"
+  },
+  {
+    "id": "alt_iron_wire",
+    "name": "Альт: железная проволока ",
+    "input": [
+      {
+        "itemId": "iron_ingot",
+        "amount": 12.5
+      }
+    ],
+    "output": {
+      "itemId": "wire",
+      "amount": 22.5
+    },
+    "machine": "constructor"
+  },
+  {
+    "id": "cable",
+    "name": "Кабель",
+    "input": [
+      {
+        "itemId": "wire",
+        "amount": 60
+      }
+    ],
+    "output": {
+      "itemId": "cable",
+      "amount": 30
+    },
+    "machine": "constructor"
+  },
+  {
+    "id": "quickwire",
+    "name": "Сверхпроволока",
+    "input": [
+      {
+        "itemId": "caterium_ingot",
+        "amount": 12
+      }
+    ],
+    "output": {
+      "itemId": "quickwire",
+      "amount": 60
+    },
+    "machine": "constructor"
+  },
+  {
+    "id": "circuit_board",
+    "name": "Печатная плата",
+    "input": [
+      {
+        "itemId": "copper_sheet",
+        "amount": 15
+      },
+      {
+        "itemId": "plastic",
+        "amount": 30
+      }
+    ],
+    "output": {
+      "itemId": "circuit_board",
+      "amount": 7.5
+    },
+    "machine": "assembler"
+  },
+  {
+    "id": "alt_caterium_circuit_board",
+    "name": "Альт: катерийная плата",
+    "input": [
+      {
+        "itemId": "plastic",
+        "amount": 12.5
+      },
+      {
+        "itemId": "quickwire",
+        "amount": 37.5
+      }
+    ],
+    "output": {
+      "itemId": "circuit_board",
+      "amount": 8.75
+    },
+    "machine": "assembler"
+  },
+  {
+    "id": "ai_limiter",
+    "name": "Ограничитель ИИ",
+    "input": [
+      {
+        "itemId": "copper_sheet",
+        "amount": 25
+      },
+      {
+        "itemId": "quickwire",
+        "amount": 100
+      }
+    ],
+    "output": {
+      "itemId": "ai_limiter",
+      "amount": 5
+    },
+    "machine": "assembler"
+  },
+  {
+    "id": "alt_plastic_ai_limiter",
+    "name": "Альт: пластиковый ограничитель ИИ",
+    "input": [
+      {
+        "itemId": "quickwire",
+        "amount": 120
+      },
+      {
+        "itemId": "plastic",
+        "amount": 28
+      }
+    ],
+    "output": {
+      "itemId": "ai_limiter",
+      "amount": 8
+    },
+    "machine": "assembler"
+  },
+  {
+    "id": "high_speed_connector",
+    "name": "Скоростной разъем",
+    "input": [
+      {
+        "itemId": "quickwire",
+        "amount": 210
+      },
+      {
+        "itemId": "cable",
+        "amount": 37.5
+      },
+      {
+        "itemId": "circuit_board",
+        "amount": 3.75
+      }
+    ],
+    "output": {
+      "itemId": "high_speed_connector",
+      "amount": 3.75
+    },
+    "machine": "manufacturer"
+  },
+  {
+    "id": "alt_silicon_high_speed_connector",
+    "name": "Альт: кремниевый разъем",
+    "input": [
+      {
+        "itemId": "quickwire",
+        "amount": 90
+      },
+      {
+        "itemId": "silica",
+        "amount": 37.5
+      },
+      {
+        "itemId": "circuit_board",
+        "amount": 3
+      }
+    ],
+    "output": {
+      "itemId": "high_speed_connector",
+      "amount": 3
+    },
+    "machine": "manufacturer"
+  },
+  {
+    "id": "reanimated_sam",
+    "name": "Активизировання СИМ",
+    "input": [
+      {
+        "itemId": "SAM",
+        "amount": 120
+      }
+    ],
+    "output": {
+      "itemId": "reanimated_sam",
+      "amount": 30
+    },
+    "machine": "constructor"
+  },
+  {
+    "id": "sam_fluctuator",
+    "name": "Флуктуатор СИМ",
+    "input": [
+      {
+        "itemId":  "reanimated_sam",
+        "amount": 60
+      },
+      {
+        "itemId":  "wire",
+        "amount": 50
+      },
+      {
+        "itemId":  "steel_pipe",
+        "amount": 30
+      }
+    ],
+    "output": {
+      "itemId": "sam_fluctuator",
+      "amount": 10
+    },
+    "machine": "manufacturer"
   }
 ]
