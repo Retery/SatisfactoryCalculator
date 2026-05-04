@@ -6,7 +6,7 @@ fun printTree(
     prefix: String = "",
     isLast: Boolean = true
 ) {
-    val connector = if (isLast) "└────" else "├────"
+    val connector = if (isLast) "└───" else "├───"
     val itemName = recipeService.getItem(node.id).name
     val machine = if(node.recipe!=null) recipeService.getMachine(node.recipe).
     replaceFirstChar { it.uppercase() } else "Miner"
@@ -18,7 +18,7 @@ fun printTree(
     println("$prefix$connector $itemName ($machine x $number + " +
             "${(remainder*100).toInt()+1}%) x${node.count}")
 
-    val newPrefix = if (isLast)"$prefix   " else "$prefix|   "
+    val newPrefix = if (isLast)"$prefix    " else "$prefix|    "
 
     node.children.forEachIndexed { index, child ->
         val isLastChild = (index == node.children.lastIndex)
