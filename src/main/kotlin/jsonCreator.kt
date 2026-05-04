@@ -59,7 +59,8 @@ private fun recipe() {
                 "refinery" ,
                 "manufacturer",
                 "converter",
-                "blender"
+                "blender",
+                "quantum_encoder",
             )
             machineList.forEachIndexed { index, machine ->
                 println("${index+1}. ${machine}")
